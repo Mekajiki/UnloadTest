@@ -3,7 +3,13 @@
   <head>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   </head>
-  <body onpagehide="var img = document.createElement('img');img.src= encodeURI('///localhost:3000/hoge.gif?json=hoge');">
+  <body>
   hoge
   </body>
+  <script type="text/javascript">
+    window.addEventListener('pagehide', function() {
+        var img = document.createElement("img");
+        img.src= encodeURI("///localhost:3000/hoge.gif?json=hoge");
+        });
+  </script>
 </html>
