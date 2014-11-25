@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  </head>
+  <body>
+  hoge
+  </body>
+  <script type="text/javascript">
+    $(window).unload(function() {
+        var img = document.createElement("img");
+        img.src= encodeURI("///localhost:3000/hoge.gif?json=hoge");
+        });
+  </script>
+</html>
